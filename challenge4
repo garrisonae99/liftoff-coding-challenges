@@ -1,0 +1,12 @@
+function longestWord (sentence) {
+    let longest = "";
+    let words = sentence.match(/[a-z]/gi);
+
+    for (i = 0; i < words.length; i++) {
+        if (words[i].length > longest.length) {
+            longest = words[i];
+        }
+    }
+    return longest;
+
+}
