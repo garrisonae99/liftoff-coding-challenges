@@ -1,0 +1,10 @@
+function detectWord(str) {
+	let lowerCase = [];
+	let hidden = '';
+	lowerCase = str.match(/[a-z]/g);
+	lowerCase.toString();
+	hidden = lowerCase.replace(/,/g, "");
+	
+	return hidden;
+	
+}
